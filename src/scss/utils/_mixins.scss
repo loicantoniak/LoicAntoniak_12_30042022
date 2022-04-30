@@ -1,0 +1,12 @@
+// Breakpoints
+@mixin breakpoint($screen) {
+  @media screen and (min-width: map-get($map: $breakpoints, $key: $screen)) {
+    @content;
+  }
+}
+
+@mixin font($weight, $size, $lineHeight) {
+  font-weight: $weight;
+  font-size: $size + px;
+  line-height: $lineHeight + px;
+}
