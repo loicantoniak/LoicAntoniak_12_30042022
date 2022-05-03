@@ -1,4 +1,6 @@
-<img src="/src/assets/images/made-with-react.svg" alt="forthebadge-react"> <img src="/src/assets/images/uses-sass.svg" alt="forthebadge-sass"> <img src="/src/assets/images/uses-recharts.svg" alt="forthebadge-recharts">
+<p align="center">
+    <img width="150" src="/src/assets/images/made-with-react.svg" alt="forthebadge-react"> <img width="150" src="/src/assets/images/uses-sass.svg" alt="forthebadge-sass"> <img width="150" src="/src/assets/images/uses-recharts.svg" alt="forthebadge-recharts">
+</p>
 
 # SportSee
 
