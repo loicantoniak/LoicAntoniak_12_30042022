@@ -3,9 +3,23 @@ body {
   font-family: $text-font, sans-serif;
   color: $color-primary;
   margin: 0;
+  background-color: $color-white;
 }
 
 * {
   box-sizing: border-box;
 }
 
+
+.content {
+  padding: 68px 107px;
+  width: 100%;
+}
+
+.color-red {
+  color: $color-secondary;
+}
+
+.d-flex {
+  display: flex;
+}

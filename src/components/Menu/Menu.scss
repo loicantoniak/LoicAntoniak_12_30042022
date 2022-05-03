@@ -1,0 +1,13 @@
+@import "../../scss/utils/variables";
+@import "../../scss/utils/mixins";
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  a {
+    @include font(500, 24, 24);
+    text-decoration: none;
+    color: $color-white;
+  }
+}

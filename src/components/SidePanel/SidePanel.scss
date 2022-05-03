@@ -1,0 +1,13 @@
+@import "../../scss/utils/variables";
+@import "../../scss/utils/mixins";
+
+.sidePanel {
+    width: 117px;
+    background-color: $color-black;
+    height:  calc(100vh - 91px);
+
+    // .copyright {
+    //     color: $color-white;
+    //     transform : rotate(270deg);
+    // }
+}
