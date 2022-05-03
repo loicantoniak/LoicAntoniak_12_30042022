@@ -1,0 +1,39 @@
+@import "../../scss/utils/variables";
+@import "../../scss/utils/mixins";
+
+.counterCard {
+  width: 258px;
+  height: 124px;
+  padding: 32px;
+  background-color: $color-grey1;
+  border-radius: $border-radius-small;
+  display: flex;
+  align-items: center;
+  margin-bottom: 39px;
+
+  &__icon {
+    width: 60px;
+    height: 60px;
+    border-radius: $border-radius;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 24px;
+  }
+
+  &__info {
+    p {
+      margin: 0.2rem 0;
+    }
+  }
+
+  &__count {
+    @include font(700, 20, 24);
+    color: #282d30;
+  }
+
+  &__name {
+    @include font(500, 14, 24);
+    color: $color-grey2;
+  }
+}

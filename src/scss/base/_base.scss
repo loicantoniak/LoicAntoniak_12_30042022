@@ -10,18 +10,20 @@ body {
   box-sizing: border-box;
 }
 
-.content {
-  padding: 68px 7%;
+.app__wrapper {
+  display: flex;
+  overflow: hidden;
+}
+
+.container {
+  padding: 68px 7% 68px calc(7% + 117px);
   width: 100%;
   height: calc(100vh - 91px);
+  overflow: auto;
 }
 
 .color-red {
   color: $color-secondary;
-}
-
-.d-flex {
-  display: flex;
 }
 
 .center {

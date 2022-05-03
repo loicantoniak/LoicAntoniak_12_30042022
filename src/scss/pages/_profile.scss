@@ -1,0 +1,13 @@
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__graph {
+    width: 70%;
+  }
+
+  &__counterCard {
+    width: 30%;
+  }
+}

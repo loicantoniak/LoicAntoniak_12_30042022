@@ -12,7 +12,7 @@ export default function Navigation() {
   return (
     <BrowserRouter>
       <Header />
-      <div className="d-flex">
+      <div className="app__wrapper">
         <SidePanel />
         <Routes>
           <Route path="/" element={<Home />} />

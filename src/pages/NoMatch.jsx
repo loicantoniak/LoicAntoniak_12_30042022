@@ -2,7 +2,7 @@ import React from "react";
 
 export default function NoMatch() {
   return (
-    <div className="content">
+    <div className="container">
       <h1 className="h1">
         Erreur <span className="color-red">404</span>
       </h1>

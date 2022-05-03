@@ -2,13 +2,14 @@
 @import "../../scss/utils/mixins";
 
 .sidePanel {
-  position: relative;
+  position: fixed;
   width: 117px;
   background-color: $color-black;
   height: calc(100vh - 91px);
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 
   .copyright {
     @include font(500, 12, 24);
