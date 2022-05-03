@@ -10,10 +10,10 @@ body {
   box-sizing: border-box;
 }
 
-
 .content {
-  padding: 68px 150px;
+  padding: 68px 7%;
   width: 100%;
+  height: calc(100vh - 91px);
 }
 
 .color-red {
@@ -22,4 +22,11 @@ body {
 
 .d-flex {
   display: flex;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
