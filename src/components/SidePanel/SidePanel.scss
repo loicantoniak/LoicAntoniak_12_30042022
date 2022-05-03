@@ -2,12 +2,20 @@
 @import "../../scss/utils/mixins";
 
 .sidePanel {
-    width: 117px;
-    background-color: $color-black;
-    height:  calc(100vh - 91px);
+  position: relative;
+  width: 117px;
+  background-color: $color-black;
+  height: calc(100vh - 91px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    // .copyright {
-    //     color: $color-white;
-    //     transform : rotate(270deg);
-    // }
+  .copyright {
+    @include font(500, 12, 24);
+    position: absolute;
+    bottom: 59px;
+    width: 9rem;
+    color: $color-white;
+    transform: rotate(270deg);
+  }
 }

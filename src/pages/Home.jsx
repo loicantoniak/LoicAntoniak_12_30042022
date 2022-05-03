@@ -10,7 +10,7 @@ export default function Home() {
 
       <p>
         Projet 12 de la formation OpenClassrooms, réalisation d'un tableau de
-        bors analytique avec React.
+        bord analytique avec React.
       </p>
       <p>Cliquez sur l'id d'un utilisateur pour voir ses données.</p>
 
