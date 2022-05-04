@@ -16,19 +16,10 @@ body {
 }
 
 .container {
-  padding: 68px 7% 68px calc(7% + 117px);
+  padding: 50px 5% 50px calc(5% + 117px);
   width: 100%;
   height: calc(100vh - 91px);
   overflow: auto;
 }
 
-.color-red {
-  color: $color-secondary;
-}
 
-.center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}

@@ -3,6 +3,7 @@
 h1 {
   @include font(500, 48, 24);
   margin-bottom: 4rem;
+  margin-top: 1rem
 }
 
 .text {

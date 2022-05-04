@@ -1,0 +1,25 @@
+// colors 
+.color-red {
+  color: $color-secondary;
+}
+
+// layout 
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}

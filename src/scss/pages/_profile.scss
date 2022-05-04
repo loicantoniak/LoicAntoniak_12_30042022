@@ -1,13 +1,19 @@
 .profile {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  margin-top: 3rem;
 
-  &__graph {
-    width: 70%;
+  &__graphs {
+    width: 80%;
   }
 
-  &__counterCard {
-    width: 30%;
+  &__smallGraphs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    grid-gap: 30px;
+  }
+
+  &__counterCards {
+    margin-left: 30px;
   }
 }
