@@ -12,16 +12,10 @@ import {
   Legend,
 } from "recharts";
 
-ActivityBarChart.propTypes = {
-  data: PropTypes.arrayOf(
-    PropTypes.shape({
-      day: PropTypes.string,
-      kilogram: PropTypes.number,
-      calories: PropTypes.number,
-    })
-  ).isRequired,
-};
-
+/**
+ * @param {Array} props
+ * @returns {ReactElement} BarChart component
+ */
 export default function ActivityBarChart({ data }) {
   return (
     <ResponsiveContainer width="100%" height="100%">
@@ -80,6 +74,16 @@ export default function ActivityBarChart({ data }) {
     </ResponsiveContainer>
   );
 }
+
+ActivityBarChart.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      day: PropTypes.string,
+      kilogram: PropTypes.number,
+      calories: PropTypes.number,
+    })
+  ).isRequired,
+};
 
 function CustomXAxisTick(node) {
   const { x, y, index } = node;

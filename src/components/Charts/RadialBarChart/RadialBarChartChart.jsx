@@ -7,16 +7,10 @@ import {
   PolarAngleAxis,
 } from "recharts";
 
-ScoreRadialBarChart.propTypes = {
-  data: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string,
-      value: PropTypes.number,
-      fill: PropTypes.string,
-    })
-  ).isRequired,
-};
-
+/**
+ * @param {Array} props
+ * @returns {ReactElement} RadialBarChart component
+ */
 export default function ScoreRadialBarChart({ data }) {
   return (
     <ResponsiveContainer width="100%" height="100%">
@@ -36,3 +30,13 @@ export default function ScoreRadialBarChart({ data }) {
     </ResponsiveContainer>
   );
 }
+
+ScoreRadialBarChart.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string,
+      value: PropTypes.number,
+      fill: PropTypes.string,
+    })
+  ).isRequired,
+};

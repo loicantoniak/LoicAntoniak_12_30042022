@@ -11,15 +11,10 @@ import {
 } from "recharts";
 import { getFirstLetterOfDayOfWeek } from "../../../lib/functions";
 
-AverageSessionLineChart.propTypes = {
-  data: PropTypes.arrayOf(
-    PropTypes.shape({
-      day: PropTypes.number,
-      sessionLength: PropTypes.number,
-    })
-  ).isRequired,
-};
-
+/**
+ * @param {Array} props
+ * @returns {ReactElement} LineChart component
+ */
 export default function AverageSessionLineChart({ data }) {
   return (
     <ResponsiveContainer width="100%" height="100%">
@@ -55,6 +50,18 @@ export default function AverageSessionLineChart({ data }) {
     </ResponsiveContainer>
   );
 }
+
+
+AverageSessionLineChart.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      day: PropTypes.number,
+      sessionLength: PropTypes.number,
+    })
+  ).isRequired,
+};
+
+
 
 function CustomTooltip(node) {
   const { active, payload } = node;

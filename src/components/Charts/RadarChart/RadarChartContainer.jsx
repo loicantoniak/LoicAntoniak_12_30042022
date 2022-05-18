@@ -5,6 +5,15 @@ import backend from "../../../services/backend";
 import SmallCardSkeleton from "../../Skeleton/SmallCardSkeleton";
 import PerformanceRadarChart from "./RadarChart";
 
+const tradDataKind = {
+  1: "Cardio",
+  2: "Energie",
+  3: "Endurance",
+  4: "Force",
+  5: "Vitesse",
+  6: "Intensité",
+};
+
 export default function RadarChartContainer() {
   const { userId } = useParams();
 
@@ -25,11 +34,11 @@ export default function RadarChartContainer() {
   const formattedData = useMemo(() => {
     if (!Object.keys(data).length) return;
 
-    const { kind, data: chartData } = data;
-    
+    const { data: chartData } = data;
+
     const formattedData = chartData.map((d) => ({
       ...d,
-      kind: kind[d.kind],
+      kind: tradDataKind[d.kind],
     }));
 
     return formattedData;

@@ -9,15 +9,10 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-PerformanceRadarChart.propTypes = {
-  data: PropTypes.arrayOf(
-    PropTypes.shape({
-      value: PropTypes.number,
-      kind: PropTypes.string,
-    })
-  ).isRequired,
-};
-
+/**
+ * @param {Array} props
+ * @returns {ReactElement} RadarChart component
+ */
 export default function PerformanceRadarChart({ data }) {
   return (
     <ResponsiveContainer width="100%" height="100%">
@@ -34,3 +29,12 @@ export default function PerformanceRadarChart({ data }) {
     </ResponsiveContainer>
   );
 }
+
+PerformanceRadarChart.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      value: PropTypes.number,
+      kind: PropTypes.string,
+    })
+  ).isRequired,
+};
