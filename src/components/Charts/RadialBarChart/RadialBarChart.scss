@@ -1,0 +1,45 @@
+@import "../../../scss/utils/variables";
+@import "../../../scss/utils/mixins";
+
+.radiaBarChartContainer {
+  height: 263px;
+  min-width: 175px;
+  background-color: $color-grey1;
+  border-radius: $border-radius-small;
+  position: relative;
+
+  .title {
+    padding: 18px 0 0 2rem;
+    margin: 0;
+    position: absolute;
+  }
+
+  .centerInfo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 159px;
+    width: 159px;
+    background-color: $color-white;
+
+    .centerInfoContent {
+      margin-top: 1rem;
+    }
+
+    .score {
+      @include font(700, 26, 26);
+    }
+
+    .scoreText {
+      @include font(500, 16, 20);
+      color: $color-grey2;
+    }
+  }
+}

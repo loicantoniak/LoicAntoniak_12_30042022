@@ -1,0 +1,30 @@
+@import "../../../scss/utils/variables";
+@import "../../../scss/utils/mixins";
+
+.lineChartContainer {
+  height: 263px;
+  min-width: 175px;
+  background-color: $color-secondary;
+  border-radius: $border-radius-small;
+  position: relative;
+
+  .title {
+    padding: 18px 0 0 2rem;
+    margin: 0;
+    position: absolute;
+    color: white;
+    width: 10rem;
+    p {
+        @include font(500, 15, 24);
+      }
+  }
+}
+
+.custom-lineChart-tooltip{
+  background-color: $color-white;
+  color: black;
+  padding: 0 7px;
+  p {
+    @include font(500, 12, 24);
+  }
+}

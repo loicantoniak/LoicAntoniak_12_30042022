@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
+import "./LineChart.scss";
 import { useParams } from "react-router-dom";
 import backend from "../../../services/backend";
 import SmallCardSkeleton from "../../Skeleton/SmallCardSkeleton";
+import AverageSessionLineChart from "./LineChart";
 
 export default function LineChartContainer() {
   const { userId } = useParams();
@@ -15,12 +17,18 @@ export default function LineChartContainer() {
       .getUserAverageSessions(userId)
       .then((res) => {
         setData(res.data.data);
-        // setLoading(false);
+        setLoading(false);
       })
       .catch(() => setError(true));
   }, [userId]);
 
+  if (error) return <p>Un erreur s'est produite</p>;
   if (loading) return <SmallCardSkeleton />;
 
-  return <div>LineChartContainer</div>;
+  return (
+    <div className="lineChartContainer">
+      <p className="title">Durée moyenne des sessions</p>
+      <AverageSessionLineChart data={data.sessions} />
+    </div>
+  );
 }

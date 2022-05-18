@@ -1,0 +1,27 @@
+@import "../../../scss/utils/variables";
+@import "../../../scss/utils/mixins";
+
+.barChartContainer {
+  height: 320px;
+  background-color: $color-grey1;
+  border-radius: $border-radius-small;
+  position: relative;
+
+  .title {
+    padding: 18px 0 0 2rem;
+    margin: 0;
+    position: absolute;
+  }
+
+  .custom-ActivityBarChart-tooltip {
+    background-color: $color-secondary;
+    color: white;
+    padding: 10px 20px;
+    p {
+      @include font(500, 12, 24);
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+

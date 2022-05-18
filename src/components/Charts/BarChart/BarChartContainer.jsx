@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
+import "./BarChart.scss";
 import { useParams } from "react-router-dom";
 import backend from "../../../services/backend";
 import LargeCardSkeleton from "../../Skeleton/LargeCardSkeleton";
+import ActivityBarChart from "./BarChart";
 
 export default function BarChartContainer() {
   const { userId } = useParams();
@@ -15,14 +17,18 @@ export default function BarChartContainer() {
       .getUserActivity(userId)
       .then((res) => {
         setData(res.data.data);
-        // setLoading(false);
+        setLoading(false);
       })
       .catch(() => setError(true));
   }, [userId]);
 
-  console.log(loading);
-
+  if (error) return <p>Un erreur s'est produite</p>;
   if (loading) return <LargeCardSkeleton />;
 
-  return <div>BarChartContainer</div>;
+  return (
+    <div className="barChartContainer">
+      <p className="title">Activité quotidienne</p>
+      <ActivityBarChart data={data.sessions} />
+    </div>
+  );
 }

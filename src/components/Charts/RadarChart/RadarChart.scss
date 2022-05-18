@@ -1,0 +1,10 @@
+@import "../../../scss/utils/variables";
+@import "../../../scss/utils/mixins";
+
+.radarChartContainer {
+  height: 263px;
+  min-width: 175px;
+  background-color: #282d30;
+  border-radius: $border-radius-small;
+  position: relative;
+}

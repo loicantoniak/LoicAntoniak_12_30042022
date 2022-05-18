@@ -25,33 +25,30 @@ export default function Profile() {
       .getUser(userId)
       .then((res) => {
         setData(res.data.data);
-        // setLoading(false);
+        setLoading(false);
       })
       .catch(() => setError(true));
   }, [userId]);
 
   if (error) return <span>Oups ! Une erreur est survenue...</span>;
 
-  const { keyData } = data;
+  const { userInfos, keyData, todayScore, score } = data;
 
   return (
     <div className="container">
       {loading ? (
-        <>
-          <TitleSkeleton />
-          <TextSkeleton />
-        </>
+        <TitleSkeleton />
       ) : (
-        <>
-          <h1 className="h1">
-            Bonjour{" "}
-            <span className="color-red">{data.userInfos.firstName}</span>
-          </h1>
-
-          <p className="text">
-            Félicitation ! Vous avez explosé vos objectifs hier 👏
-          </p>
-        </>
+        <h1 className="h1">
+          Bonjour <span className="color-red">{userInfos.firstName}</span>
+        </h1>
+      )}
+      {loading ? (
+        <TextSkeleton />
+      ) : (
+        <p className="text">
+          Félicitation ! Vous avez explosé vos objectifs hier 👏
+        </p>
       )}
 
       <div className="profile">
@@ -60,7 +57,11 @@ export default function Profile() {
           <div className="profile__smallGraphs">
             <LineChart />
             <RadarChart />
-            {loading ? <SmallCardSkeleton /> : <RadialBarChart />}
+            {loading ? (
+              <SmallCardSkeleton />
+            ) : (
+              <RadialBarChart score={todayScore || score} />
+            )}
           </div>
         </div>
 

@@ -1,6 +1,8 @@
-<p align="center">
-    <img width="150" src="/src/assets/images/made-with-react.svg" alt="forthebadge-react"> <img width="150" src="/src/assets/images/uses-sass.svg" alt="forthebadge-sass"> <img width="150" src="/src/assets/images/uses-recharts.svg" alt="forthebadge-recharts">
+<p>
+    <a href="https://fr.reactjs.org/"><img src="https://img.shields.io/badge/MADE%20WITH-REACT-69dafb.svg"/></a>  <a href="https://recharts.org/en-US/"><img src="https://img.shields.io/badge/USES-RECHARTS-5ab7bf.svg"/></a><a href="https://sass-lang.com/"><img src="https://img.shields.io/badge/USES-SASS-cf649a.svg"/></a>
 </p>
+
+[![ForTheBadge uses-badges](http://ForTheBadge.com/images/badges/uses-badges.svg)](http://ForTheBadge.com)
 
 # SportSee
 
