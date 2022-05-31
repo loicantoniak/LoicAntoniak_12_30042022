@@ -12,7 +12,7 @@
     padding: 18px 0 0 2rem;
     margin: 0;
     position: absolute;
-    color: white;
+    color: #e0afb0;
     width: 10rem;
     p {
       @include font(500, 15, 24);
@@ -29,9 +29,4 @@
   }
 }
 
-.lineChartOpacity {
-  height: 100%;
-  background: rgb(251,251,251);
-  background: linear-gradient(90deg, rgba(251,251,251,0.44021358543417366) 0%, rgba(251,251,251,0) 100%);
-   position: absolute;
-}
+
