@@ -51,7 +51,6 @@ export default function AverageSessionLineChart({ data }) {
   );
 }
 
-
 AverageSessionLineChart.propTypes = {
   data: PropTypes.arrayOf(
     PropTypes.shape({
@@ -60,8 +59,6 @@ AverageSessionLineChart.propTypes = {
     })
   ).isRequired,
 };
-
-
 
 function CustomTooltip(node) {
   const { active, payload } = node;

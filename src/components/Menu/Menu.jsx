@@ -9,6 +9,11 @@ const MAPPING_LINK = [
   { path: "/communaute", name: "Communauté" },
 ];
 
+/**
+ * Component for creating menu
+ * 
+ * @component
+ */
 export default function Menu() {
   return (
     <nav className="menu">

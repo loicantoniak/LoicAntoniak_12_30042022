@@ -4,6 +4,11 @@ import logo from "../../assets/images/logo.png";
 import { Link } from "react-router-dom";
 import Menu from "../Menu/Menu";
 
+/**
+ * Component for creating header with logo and menu 
+ * 
+ * @component 
+ */
 export default function Header() {
   return (
     <div className="header">

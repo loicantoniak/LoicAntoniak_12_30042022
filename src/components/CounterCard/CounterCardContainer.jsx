@@ -3,14 +3,21 @@ import PropTypes from "prop-types";
 import CounterCard from "./CounterCard";
 import { MAPPING_CARD } from "./constant";
 
+
+/**
+ * Wrapper of CounterCard component to format data 
+ * @param {object} counters 
+ * @returns react component
+ */
 export default function CounterCardContainer({ counters }) {
+
   const data = useMemo(() => {
     const keys = Object.keys(counters);
-    const transformData = keys.map((k) => ({
+    const formattedData = keys.map((k) => ({
       ...MAPPING_CARD[k],
       count: counters[k],
     }));
-    return transformData;
+    return formattedData;
   }, [counters]);
 
   return (
@@ -30,5 +37,11 @@ export default function CounterCardContainer({ counters }) {
 }
 
 CounterCardContainer.propTypes = {
+/**
+ * data of counters
+ * 
+ * @type {object} 
+ * @required
+ */
   counters: PropTypes.objectOf(PropTypes.number).isRequired,
 };

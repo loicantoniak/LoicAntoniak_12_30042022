@@ -2,14 +2,17 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./CounterCard.scss";
 
-CounterCard.propTypes = {
-  icon: PropTypes.node.isRequired,
-  color: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  unit: PropTypes.string.isRequired,
-  count: PropTypes.number.isRequired,
-};
-
+/**
+ * Component for showing personnal information into a counter card
+ *
+ * @param {node} icon  svg
+ * @param {string} color background color to icon
+ * @param {string} name name of the counter
+ * @param {string} unit unit of the counter
+ * @param {number} count quantity of the counter
+ *
+ * @component
+ */
 export default function CounterCard({ icon, color, name, unit, count }) {
   return (
     <div className="counterCard">
@@ -27,3 +30,31 @@ export default function CounterCard({ icon, color, name, unit, count }) {
     </div>
   );
 }
+
+CounterCard.propTypes = {
+  /**
+   * @type {node}
+   * @required
+   */
+  icon: PropTypes.node.isRequired,
+  /**
+   * @type {string}
+   * @required
+   */
+  color: PropTypes.string.isRequired,
+  /**
+   * @type {string}
+   * @required
+   */
+  name: PropTypes.string.isRequired,
+  /**
+   * @type {string}
+   * @required
+   */
+  unit: PropTypes.string.isRequired,
+  /**
+   * @type {number}
+   * @required
+   */
+  count: PropTypes.number.isRequired,
+};

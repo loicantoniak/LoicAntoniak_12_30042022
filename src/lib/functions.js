@@ -1,6 +1,6 @@
 /**
  * Give a first letter of day of week 
- * @param {Number} number
+ * @param {Number} number number of day between 1 and 7 (Monday to Sunday)
  * @returns string
  */
 export function getFirstLetterOfDayOfWeek(number) {

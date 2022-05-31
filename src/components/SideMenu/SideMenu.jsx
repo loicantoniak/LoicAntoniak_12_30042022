@@ -8,6 +8,11 @@ import { ReactComponent as Fitness } from "../../assets/icons/fitness.svg";
 
 const MAPPING_ICON = [<Yogi />, <Cyclist />, <Swimmer />, <Fitness />];
 
+/**
+ * Component for mapping sideMenu Icons
+ * 
+ * @component
+ */
 export default function SideMenu() {
   return (
     <div>

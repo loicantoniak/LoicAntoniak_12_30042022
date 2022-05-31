@@ -15,16 +15,23 @@
     color: white;
     width: 10rem;
     p {
-        @include font(500, 15, 24);
-      }
+      @include font(500, 15, 24);
+    }
   }
 }
 
-.custom-lineChart-tooltip{
+.custom-lineChart-tooltip {
   background-color: $color-white;
   color: black;
   padding: 0 7px;
   p {
     @include font(500, 12, 24);
   }
+}
+
+.lineChartOpacity {
+  height: 100%;
+  background: rgb(251,251,251);
+  background: linear-gradient(90deg, rgba(251,251,251,0.44021358543417366) 0%, rgba(251,251,251,0) 100%);
+   position: absolute;
 }
