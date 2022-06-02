@@ -1,21 +1,38 @@
 import axios from "axios";
 
-const API = axios.create({baseURL: "http://localhost:3000"})
+const API = axios.create({ baseURL: "http://localhost:3000" });
+
+const environnement = "dev";
 
 const getUser = (userId) => {
-  return API.get(`/user/${userId}`);
+  if (environnement === "production") {
+    return API.get(`/user/${userId}`);
+  }
+  return API.get(`/mocks/${userId}.json`);
 };
 
 const getUserActivity = (userId) => {
-  return API.get(`/user/${userId}/activity`);
+  if (environnement === "production") {
+    return API.get(`/user/${userId}/activity`);
+  }
+
+  return API.get(`/mocks/${userId}/activity.json`);
 };
 
 const getUserAverageSessions = (userId) => {
-  return API.get(`/user/${userId}/average-sessions`);
+  if (environnement === "production") {
+    return API.get(`/user/${userId}/average-sessions`);
+  }
+
+  return API.get(`/mocks/${userId}/average-session.json`);
 };
 
 const getUserPerformance = (userId) => {
-  return API.get(`/user/${userId}/performance`);
+  if (environnement === "production") {
+    return API.get(`/user/${userId}/performance`);
+  }
+
+  return API.get(`/mocks/${userId}/performance.json`);
 };
 
 const backend = {
