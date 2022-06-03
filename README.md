@@ -45,7 +45,7 @@ $ npm build
 
 The [repository](https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard) containing all the source code to run the micro API for the SportSee sports analytics dashboard.
 
-Démo live :
+Démo live : https://loicantoniak.github.io/LoicAntoniak_12_30042022/
 
 ## Skills assessed
 
