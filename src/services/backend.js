@@ -4,8 +4,7 @@ const PROD = "prod";
 const DEV = "dev";
 const environnement = DEV;
 
-const URL =
-  environnement === PROD ? "http://localhost:3000" : "http://localhost:3001";
+const URL = "http://localhost:3000";
 
 const API = axios.create({ baseURL: URL });
 
