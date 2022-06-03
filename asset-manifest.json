@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/LoicAntoniak_12_30042022/static/css/main.e6666af6.css",
+    "main.js": "/LoicAntoniak_12_30042022/static/js/main.624cb38e.js",
+    "static/js/787.a8762e9d.chunk.js": "/LoicAntoniak_12_30042022/static/js/787.a8762e9d.chunk.js",
+    "static/media/logo.png": "/LoicAntoniak_12_30042022/static/media/logo.1a9926ecd84f8a7a0db5.png",
+    "static/media/swimmer.svg": "/LoicAntoniak_12_30042022/static/media/swimmer.bc12b705d445672f550a8441d581c700.svg",
+    "static/media/cyclist.svg": "/LoicAntoniak_12_30042022/static/media/cyclist.fe885ecda828d3e2f637bb3b675db76c.svg",
+    "static/media/apple.svg": "/LoicAntoniak_12_30042022/static/media/apple.95581ba1b204199334e122af4784ab16.svg",
+    "index.html": "/LoicAntoniak_12_30042022/index.html",
+    "static/media/chicken.svg": "/LoicAntoniak_12_30042022/static/media/chicken.ffbc3b88a759c706993bb26fbd66113b.svg",
+    "static/media/yogi.svg": "/LoicAntoniak_12_30042022/static/media/yogi.76760efccddf14928ee9263744c1b6e6.svg",
+    "static/media/burger.svg": "/LoicAntoniak_12_30042022/static/media/burger.18f60e0efe37e86bcac036d673f0bab0.svg",
+    "static/media/energy.svg": "/LoicAntoniak_12_30042022/static/media/energy.25fef86ed5860200bdf90f9cd185e1e3.svg",
+    "static/media/fitness.svg": "/LoicAntoniak_12_30042022/static/media/fitness.9d22814b98d0ca386d9ddacded4eae80.svg",
+    "main.e6666af6.css.map": "/LoicAntoniak_12_30042022/static/css/main.e6666af6.css.map",
+    "main.624cb38e.js.map": "/LoicAntoniak_12_30042022/static/js/main.624cb38e.js.map",
+    "787.a8762e9d.chunk.js.map": "/LoicAntoniak_12_30042022/static/js/787.a8762e9d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6666af6.css",
+    "static/js/main.624cb38e.js"
+  ]
+}
