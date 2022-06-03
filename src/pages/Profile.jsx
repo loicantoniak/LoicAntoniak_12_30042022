@@ -30,7 +30,7 @@ export default function Profile() {
       .catch(() => setError(true));
   }, [userId]);
 
-  if (error) return <span>Oups ! Une erreur est survenue...</span>;
+  if (error) return <span className="error">Oups ! Une erreur est survenue...</span>;
 
   const { userInfos, keyData, todayScore, score } = data;
 

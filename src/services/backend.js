@@ -1,18 +1,23 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: "http://localhost:3000" });
+const PROD = "prod";
+const DEV = "dev";
+const environnement = DEV;
 
-const environnement = "dev";
+const URL =
+  environnement === PROD ? "http://localhost:3000" : "http://localhost:3001";
+
+const API = axios.create({ baseURL: URL });
 
 const getUser = (userId) => {
-  if (environnement === "production") {
+  if (environnement === PROD) {
     return API.get(`/user/${userId}`);
   }
   return API.get(`/mocks/${userId}.json`);
 };
 
 const getUserActivity = (userId) => {
-  if (environnement === "production") {
+  if (environnement === PROD) {
     return API.get(`/user/${userId}/activity`);
   }
 
@@ -20,7 +25,7 @@ const getUserActivity = (userId) => {
 };
 
 const getUserAverageSessions = (userId) => {
-  if (environnement === "production") {
+  if (environnement === PROD) {
     return API.get(`/user/${userId}/average-sessions`);
   }
 
@@ -28,7 +33,7 @@ const getUserAverageSessions = (userId) => {
 };
 
 const getUserPerformance = (userId) => {
-  if (environnement === "production") {
+  if (environnement === PROD) {
     return API.get(`/user/${userId}/performance`);
   }
 
