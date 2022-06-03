@@ -16,7 +16,7 @@ export default function Navigation() {
         <SidePanel />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="user/:userId" element={<Profile />} />
+          <Route path="/user/:userId" element={<Profile />} />
           <Route path="*" element={<NoMatch />} />
         </Routes>
       </div>
