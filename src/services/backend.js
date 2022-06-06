@@ -1,42 +1,34 @@
 import axios from "axios";
 
-const PROD = "prod";
-const DEV = "dev";
-const environnement = DEV;
+// const PROD = "PROD";
+const DEV = "DEV";
+const MOCK = "MOCK";
 
-const URL = "http://localhost:3000";
+const URL = {
+  PROD: "https://loicantoniak.github.io/LoicAntoniak_12_30042022/mocks/",
+  DEV: "http://localhost:3000/user/",
+  MOCK: "http://localhost:3000/mocks/",
+};
 
-const API = axios.create({ baseURL: URL });
+const env = MOCK;
+const string = env === DEV ? "" : ".json";
+
+const API = axios.create({ baseURL: URL[env] });
 
 const getUser = (userId) => {
-  if (environnement === PROD) {
-    return API.get(`/user/${userId}`);
-  }
-  return API.get(`/mocks/${userId}.json`);
+  return API.get(userId + string);
 };
 
 const getUserActivity = (userId) => {
-  if (environnement === PROD) {
-    return API.get(`/user/${userId}/activity`);
-  }
-
-  return API.get(`/mocks/${userId}/activity.json`);
+  return API.get(userId + "/activity" + string);
 };
 
 const getUserAverageSessions = (userId) => {
-  if (environnement === PROD) {
-    return API.get(`/user/${userId}/average-sessions`);
-  }
-
-  return API.get(`/mocks/${userId}/average-session.json`);
+  return API.get(userId + "/average-sessions" + string);
 };
 
 const getUserPerformance = (userId) => {
-  if (environnement === PROD) {
-    return API.get(`/user/${userId}/performance`);
-  }
-
-  return API.get(`/mocks/${userId}/performance.json`);
+  return API.get(userId + "/performance" + string);
 };
 
 const backend = {
