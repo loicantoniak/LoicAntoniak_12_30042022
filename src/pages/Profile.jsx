@@ -35,10 +35,10 @@ export default function Profile() {
     if (Object.keys(data).length > 0) {
       setUser(data);
     }
-  }, [data]);
+  }, [data, user]);
 
-  if (user) {
-    const { userInfos, keyData, todayScore, score } = data;
+  if (user && Number(userId) === user.id) {
+    const { userInfos, keyData, todayScore, score } = user;
 
     return (
       <div className="container">
