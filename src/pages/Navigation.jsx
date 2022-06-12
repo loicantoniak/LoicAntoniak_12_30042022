@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, HashRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 // Components
 import Header from "../components/Header/Header";
 import SidePanel from "../components/SidePanel/SidePanel";
@@ -10,7 +10,7 @@ import NoMatch from "./NoMatch";
 
 export default function Navigation() {
   return (
-    <HashRouter basename="/">
+    <BrowserRouter>
       <Header />
       <div className="app__wrapper">
         <SidePanel />
@@ -20,6 +20,6 @@ export default function Navigation() {
           <Route path="*" element={<NoMatch />} />
         </Routes>
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
