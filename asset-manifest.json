@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/LoicAntoniak_12_30042022/static/css/main.e6666af6.css",
-    "main.js": "/LoicAntoniak_12_30042022/static/js/main.866efb27.js",
+    "main.js": "/LoicAntoniak_12_30042022/static/js/main.52903553.js",
     "static/js/787.a8762e9d.chunk.js": "/LoicAntoniak_12_30042022/static/js/787.a8762e9d.chunk.js",
     "static/media/logo.png": "/LoicAntoniak_12_30042022/static/media/logo.1a9926ecd84f8a7a0db5.png",
     "static/media/swimmer.svg": "/LoicAntoniak_12_30042022/static/media/swimmer.bc12b705d445672f550a8441d581c700.svg",
@@ -14,11 +14,11 @@
     "static/media/energy.svg": "/LoicAntoniak_12_30042022/static/media/energy.25fef86ed5860200bdf90f9cd185e1e3.svg",
     "static/media/fitness.svg": "/LoicAntoniak_12_30042022/static/media/fitness.9d22814b98d0ca386d9ddacded4eae80.svg",
     "main.e6666af6.css.map": "/LoicAntoniak_12_30042022/static/css/main.e6666af6.css.map",
-    "main.866efb27.js.map": "/LoicAntoniak_12_30042022/static/js/main.866efb27.js.map",
+    "main.52903553.js.map": "/LoicAntoniak_12_30042022/static/js/main.52903553.js.map",
     "787.a8762e9d.chunk.js.map": "/LoicAntoniak_12_30042022/static/js/787.a8762e9d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6666af6.css",
-    "static/js/main.866efb27.js"
+    "static/js/main.52903553.js"
   ]
 }
