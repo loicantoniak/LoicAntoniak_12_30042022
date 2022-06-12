@@ -1,8 +1,8 @@
 import axios from "axios";
 
-// const PROD = "PROD";
+const PROD = "PROD";
 const DEV = "DEV";
-const MOCK = "MOCK";
+// const MOCK = "MOCK";
 
 const URL = {
   PROD: "https://loicantoniak.github.io/LoicAntoniak_12_30042022/mocks/",
@@ -10,7 +10,7 @@ const URL = {
   MOCK: "http://localhost:3000/mocks/",
 };
 
-const env = MOCK;
+const env = PROD;
 const string = env === DEV ? "" : ".json";
 
 const API = axios.create({ baseURL: URL[env] });
